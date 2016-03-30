@@ -10,12 +10,12 @@ Standard deviation of each column
 Get the standard deviation (SE) of each column of a matrix or data-frame
 }
 \usage{
-colSD( Matrix )
+colSD(Matrix)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{Matrix}{
-%%     ~~Describe \code{x} here~~
+%%     ~~Describe \code{Matrix} here~~
 Matrix should be a matrix object or a data-frame
 }
 }
@@ -36,8 +36,8 @@ Returns a vector of length = ncol(Matrix) with the column SDs
 }
 \author{
 %%  ~~who you are~~
-Subhrangshu Nandi; \\
-statistics phd student, UW Madison; \\
+Subhrangshu Nandi; 
+statistics phd student, UW Madison; 
 snandi@wisc.edu or nands31@gmail.com
 }
 \note{
@@ -54,5 +54,7 @@ rowSD
 data( LifeCycleSavings )
 colSD( Matrix = LifeCycleSavings )
 }
+% Add one or more standard keywords, see file 'KEYWORDS' in the
+% R documentation directory.
 \keyword{ SD }
 \keyword{ standard deviation }% __ONLY ONE__ keyword per line
