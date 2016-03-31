@@ -1,31 +1,30 @@
-\name{rowVar}
-\alias{rowVar}
+\name{normalize_vector}
+\alias{normalize_vector}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 %%  ~~function to do ... ~~
-Variance of each row
+Normalize a vector
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
-Get the Variance of each row of a matrix or data-frame
+Normalize a vector by subtracting its mean from all the elements and dividing by its SD
 }
 \usage{
-rowVar( Matrix )
+normalize_vector(Vector)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{Matrix}{
-%%     ~~Describe \code{x} here~~
-Matrix should be a matrix object or a data-frame
+  \item{Vector}{
+%%     ~~Describe \code{Vector} here~~
+A vector of numerical values
 }
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
-The values should be all numeric
 }
 \value{
 %%  ~Describe the value returned
-Returns a vector of length = nrow(Matrix) with the row variances
+Returns a vector of same length, with normalized values
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
 %%  \item{comp2 }{Description of 'comp2'}
@@ -48,10 +47,12 @@ snandi@wisc.edu or nands31@gmail.com
 
 \seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-colVar
 }
 \examples{
-data( LifeCycleSavings )
-rowVar( Matrix = t(LifeCycleSavings) )
+vector <- c(2, 3, 5, 2, 1)
+normalize_vector(vector)
 }
-\keyword{ variance }% __ONLY ONE__ keyword per line
+% Add one or more standard keywords, see file 'KEYWORDS' in the
+% R documentation directory.
+\keyword{ normalize }
+\keyword{ standardize }% __ONLY ONE__ keyword per line

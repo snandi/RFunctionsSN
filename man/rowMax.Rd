@@ -1,16 +1,16 @@
-\name{rowVar}
-\alias{rowVar}
+\name{rowMax}
+\alias{rowMax}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 %%  ~~function to do ... ~~
-Variance of each row
+Max of each row
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
-Get the Variance of each row of a matrix or data-frame
+Get the Max of each row of a matrix or data-frame
 }
 \usage{
-rowVar( Matrix )
+rowMax( Matrix )
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -25,7 +25,7 @@ The values should be all numeric
 }
 \value{
 %%  ~Describe the value returned
-Returns a vector of length = nrow(Matrix) with the row variances
+Returns a vector of length = nrow(Matrix) with the row maximums
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
 %%  \item{comp2 }{Description of 'comp2'}
@@ -48,10 +48,13 @@ snandi@wisc.edu or nands31@gmail.com
 
 \seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-colVar
+colMax
 }
 \examples{
 data( LifeCycleSavings )
-rowVar( Matrix = t(LifeCycleSavings) )
+rowMax( Matrix = t(LifeCycleSavings) )
 }
-\keyword{ variance }% __ONLY ONE__ keyword per line
+% Add one or more standard keywords, see file 'KEYWORDS' in the
+% R documentation directory.
+\keyword{ max }
+\keyword{ maximum }% __ONLY ONE__ keyword per line

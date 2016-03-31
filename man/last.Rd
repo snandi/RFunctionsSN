@@ -1,31 +1,30 @@
-\name{rowVar}
-\alias{rowVar}
+\name{last}
+\alias{last}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 %%  ~~function to do ... ~~
-Variance of each row
+Last element of a vector
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
-Get the Variance of each row of a matrix or data-frame
+Returns the last element of a vector or list
 }
 \usage{
-rowVar( Matrix )
+last(x)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{Matrix}{
+  \item{x}{
 %%     ~~Describe \code{x} here~~
-Matrix should be a matrix object or a data-frame
+A vector or list
 }
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
-The values should be all numeric
 }
 \value{
 %%  ~Describe the value returned
-Returns a vector of length = nrow(Matrix) with the row variances
+The last element of the vector or list
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
 %%  \item{comp2 }{Description of 'comp2'}
@@ -48,10 +47,13 @@ snandi@wisc.edu or nands31@gmail.com
 
 \seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-colVar
 }
 \examples{
-data( LifeCycleSavings )
-rowVar( Matrix = t(LifeCycleSavings) )
+vector <- c(2, 3, 5, 2, 1)
+last(vector)
 }
-\keyword{ variance }% __ONLY ONE__ keyword per line
+% Add one or more standard keywords, see file 'KEYWORDS' in the
+% R documentation directory.
+\keyword{ last }
+\keyword{ vector }
+\keyword{ list }% __ONLY ONE__ keyword per line
