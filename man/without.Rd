@@ -1,31 +1,34 @@
-\name{colSE}
-\alias{colSE}
+\name{without}
+\alias{without}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 %%  ~~function to do ... ~~
-Standard error of each column
+Return the elements of x not in y
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
-Get the standard error (SE) of each column of a matrix or data-frame
+Return the elements of x not in y. In set notation, this returns A \\ B
 }
 \usage{
-colSE(Matrix)
+x \%w/o\% y
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{Matrix}{
+  \item{x}{
 %%     ~~Describe \code{x} here~~
-Matrix should be a matrix object or a data-frame
+First vector
+}
+  \item{y}{
+%%     ~~Describe \code{x} here~~
+Second vector
 }
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
-The values should be all numeric
 }
 \value{
 %%  ~Describe the value returned
-Returns a vector of length = ncol(Matrix) with the column SEs
+Returns the elements of x not in y
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
 %%  \item{comp2 }{Description of 'comp2'}
@@ -36,8 +39,8 @@ Returns a vector of length = ncol(Matrix) with the column SEs
 }
 \author{
 %%  ~~who you are~~
-Subhrangshu Nandi \\
-statistics phd student, UW Madison \\
+Subhrangshu Nandi; 
+statistics phd student, UW Madison; 
 snandi@wisc.edu or nands31@gmail.com
 }
 \note{
@@ -48,11 +51,11 @@ snandi@wisc.edu or nands31@gmail.com
 
 \seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-rowSE
 }
 \examples{
-data( LifeCycleSavings )
-colSE( Matrix = LifeCycleSavings )
+x <- c(4, 1, 5, 6)
+y <- c(4, 5)
+x \%w/o\% y
 }
-\keyword{ SE }
-\keyword{ standard error }% __ONLY ONE__ keyword per line
+% Add one or more standard keywords, see file 'KEYWORDS' in the
+% R documentation directory.

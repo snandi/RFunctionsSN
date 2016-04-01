@@ -1,31 +1,30 @@
-\name{colSE}
-\alias{colSE}
+\name{na.is.zero}
+\alias{na.is.zero}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 %%  ~~function to do ... ~~
-Standard error of each column
+Convert NAs to Zero in a vector
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
-Get the standard error (SE) of each column of a matrix or data-frame
+Convert NAs to Zero in a vector
 }
 \usage{
-colSE(Matrix)
+na.is.zero(X)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{Matrix}{
-%%     ~~Describe \code{x} here~~
-Matrix should be a matrix object or a data-frame
+  \item{X}{
+%%     ~~Describe \code{X} here~~
+Vector with NAs in it
 }
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
-The values should be all numeric
 }
 \value{
 %%  ~Describe the value returned
-Returns a vector of length = ncol(Matrix) with the column SEs
+Returns the same vector with zero's instead of NA's
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
 %%  \item{comp2 }{Description of 'comp2'}
@@ -36,8 +35,8 @@ Returns a vector of length = ncol(Matrix) with the column SEs
 }
 \author{
 %%  ~~who you are~~
-Subhrangshu Nandi \\
-statistics phd student, UW Madison \\
+Subhrangshu Nandi; 
+statistics phd student, UW Madison; 
 snandi@wisc.edu or nands31@gmail.com
 }
 \note{
@@ -48,11 +47,12 @@ snandi@wisc.edu or nands31@gmail.com
 
 \seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-rowSE
+na.omit, na.action
 }
 \examples{
-data( LifeCycleSavings )
-colSE( Matrix = LifeCycleSavings )
+vector <- c(2, 3, 5, NA, 1)
+na.is.zero(vector)
 }
-\keyword{ SE }
-\keyword{ standard error }% __ONLY ONE__ keyword per line
+% Add one or more standard keywords, see file 'KEYWORDS' in the
+% R documentation directory.
+\keyword{ NA }% __ONLY ONE__ keyword per line

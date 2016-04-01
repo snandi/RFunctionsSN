@@ -1,31 +1,33 @@
-\name{colSE}
-\alias{colSE}
+\name{notin}
+\alias{notin}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 %%  ~~function to do ... ~~
-Standard error of each column
+Opposite of \%in\%
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
-Get the standard error (SE) of each column of a matrix or data-frame
+Opposite of \%in\%: If an element x is not in y, then returns TRUE
 }
 \usage{
-colSE(Matrix)
+x \%notin\% y
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{Matrix}{
+  \item{x}{
 %%     ~~Describe \code{x} here~~
-Matrix should be a matrix object or a data-frame
+Element to check if it is in y
+}
+  \item{y}{
+%%     ~~Describe \code{x} here~~
+Element to check if x is in
 }
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
-The values should be all numeric
 }
 \value{
 %%  ~Describe the value returned
-Returns a vector of length = ncol(Matrix) with the column SEs
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
 %%  \item{comp2 }{Description of 'comp2'}
@@ -36,8 +38,8 @@ Returns a vector of length = ncol(Matrix) with the column SEs
 }
 \author{
 %%  ~~who you are~~
-Subhrangshu Nandi \\
-statistics phd student, UW Madison \\
+Subhrangshu Nandi; 
+statistics phd student, UW Madison; 
 snandi@wisc.edu or nands31@gmail.com
 }
 \note{
@@ -48,11 +50,13 @@ snandi@wisc.edu or nands31@gmail.com
 
 \seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-rowSE
+\%in\%
 }
 \examples{
-data( LifeCycleSavings )
-colSE( Matrix = LifeCycleSavings )
+x <- 3
+y <- c(4, 1, 5, 6)
+x \%notin\% y
 }
-\keyword{ SE }
-\keyword{ standard error }% __ONLY ONE__ keyword per line
+% Add one or more standard keywords, see file 'KEYWORDS' in the
+% R documentation directory.
+\keyword{ \%in\% }% __ONLY ONE__ keyword per line
