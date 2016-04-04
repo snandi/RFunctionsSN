@@ -6,5 +6,5 @@ Date: 2016-03-30
 Author: Subhrangshu Nandi
 Maintainer: S. Nandi <nands31@gmail.com>
 Description: These are some R functions that I use frequently.
-License: What license is it under?
 RoxygenNote: 5.0.1
+License: The MIT License (MIT)
