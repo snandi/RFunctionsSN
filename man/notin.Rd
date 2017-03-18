@@ -1,4 +1,4 @@
-\name{notin}
+\name{\%notin\%}
 \alias{notin}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
