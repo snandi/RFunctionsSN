@@ -1,4 +1,6 @@
 #' @export
+#' @importFrom stats sd 
+#' 
 ################################################################## 
 ## Normalize a vector by subtracting mean and dividing by SD
 ##################################################################

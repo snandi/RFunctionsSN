@@ -1,4 +1,6 @@
 #' @export
+#' @importFrom stats pf
+#' 
 ################################################################## 
 ## Returns the p-value, rounded to desired number of places, from
 ## a lm object

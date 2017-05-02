@@ -7,7 +7,7 @@ Standard deviation of each row
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
-Get the standard deviation (SE) of each row of a matrix or data-frame
+Get the standard deviation (SD) of each row of a matrix or data-frame
 }
 \usage{
 rowSD( Matrix )
