@@ -10,7 +10,7 @@ colMax(Matrix)
 \item{Matrix}{A \code{matrix} object or a \code{data-frame}}
 }
 \value{
-Returns a vector of \code{length = ncol(Matrix)} with the row maximums
+Returns a vector of \code{length = ncol(Matrix)} with the column maximums
 }
 \description{
 Get the Max of each column of a matrix or data-frame

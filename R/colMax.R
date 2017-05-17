@@ -6,7 +6,7 @@
 #' 
 #' @details The values should be all numeric
 #' 
-#' @return Returns a vector of \code{length = ncol(Matrix)} with the row maximums
+#' @return Returns a vector of \code{length = ncol(Matrix)} with the column maximums
 #' 
 #' @author Subhrangshu Nandi, PhD Statistics, UW Madison; snandi@wisc.edu or nands31@gmail.com
 #' 
