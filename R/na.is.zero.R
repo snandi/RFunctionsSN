@@ -2,7 +2,7 @@
 #' 
 #' @description Convert NAs to Zero in a vector
 #' 
-#' @param x Vector with NAs in it
+#' @param X Vector with NAs in it
 #' 
 #' @return Returns the same vector with zero's instead of NA's
 #' 

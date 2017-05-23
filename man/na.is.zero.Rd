@@ -7,7 +7,7 @@
 na.is.zero(X)
 }
 \arguments{
-\item{x}{Vector with NAs in it}
+\item{X}{Vector with NAs in it}
 }
 \value{
 Returns the same vector with zero's instead of NA's
