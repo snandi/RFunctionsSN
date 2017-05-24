@@ -9,7 +9,7 @@
 #' @examples
 #' pctChange( Before = 10, After = 11 )
 #' 
-#' @author Subhrangshu Nandi, \email{nands31@gmail.com}
+#' @author Subhrangshu Nandi, PhD Statistics, UW Madison; snandi@wisc.edu or nands31@gmail.com
 #'
 #' @export
 
@@ -17,6 +17,6 @@ pctChange <- function( Before, After ){
   if( Before == 0 ){
     stop( "Before value cannot be zero" )
   }
-  pctCh <- round( 100*( Before - After )/Before, 2 )
+  pctCh <- round( 100*( After - Before )/Before, 2 )
   return( pctCh )
 }

@@ -7,4 +7,4 @@ Author: Subhrangshu Nandi
 Maintainer: S. Nandi <nands31@gmail.com>
 Description: These are some R functions that I use frequently.
 RoxygenNote: 5.0.1
-License: The MIT License (MIT)
+License: MIT + file LICENSE

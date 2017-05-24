@@ -24,9 +24,12 @@ name notin
 x <- 3
 y <- c(4, 1, 5, 6)
 x \\\%notin\\\% y
+
 }
 \author{
-Subhrangshu Nandi; \email{nands31@gmail.com}
+Subhrangshu Nandi, PhD Statistics, UW Madison; snandi@wisc.edu or nands31@gmail.com
 }
-\keyword{in}
+\seealso{
+\code{\%in\%}
+}
 

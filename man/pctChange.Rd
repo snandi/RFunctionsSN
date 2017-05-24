@@ -22,6 +22,6 @@ pctChange( Before = 10, After = 11 )
 
 }
 \author{
-Subhrangshu Nandi, \email{nands31@gmail.com}
+Subhrangshu Nandi, PhD Statistics, UW Madison; snandi@wisc.edu or nands31@gmail.com
 }
 

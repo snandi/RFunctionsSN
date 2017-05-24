@@ -19,11 +19,8 @@
 #' @keywords maximum
 #' 
 #' @export
-################################################################## 
-## Returns the max each column of a dataset
-##################################################################
 colMax <- function( Matrix ){
-  Max <- rowMax( t(Matrix) )
-  return(Max)
+  Max <- rowMax( t( Matrix ) )
+  return( Max )
 }
 ################################################################## 
