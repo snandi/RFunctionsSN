@@ -1,10 +1,10 @@
 Package: RFunctionsSN
 Type: Package
-Title: Simple R functions for convenience
-Version: 1.0
-Date: 2016-03-30
+Title: Simple R utility functions for convenience
+Version: 1.1
+Date: 2017-05-26
 Author: Subhrangshu Nandi
 Maintainer: S. Nandi <nands31@gmail.com>
-Description: These are some R functions that I use frequently.
+Description: These are some R utility functions that I use frequently.
 RoxygenNote: 5.0.1
 License: MIT + file LICENSE
